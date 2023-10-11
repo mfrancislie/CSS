@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid - Auto</title>
+</head>
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    height: 100vh;
+    background: gray;
+  
+    /* Grid */
+    display: grid;
+
+    /* AUTO COLUMNS */
+    /* grid-auto-flow: column;
+    grid-auto-columns: 50px; */
+
+    /* AUTO ROWS */
+    /* grid-auto-rows: 50px; */
+  }
+
+  .rod1 {
+    background: red;
+  }
+  .rod2 {
+    background: blue;
+  }
+  .rod3 {
+    background: yellow;
+  }
+  .rod4 {
+    background: green;
+  }
+</style>
+
+<body>
+  <div class="main">
+    <div class="rod1">ROD 1</div>
+    <div class="rod2">ROD 2</div>
+    <div class="rod3">ROD 3</div>
+    <div class="rod4">ROD 4</div>
+  </div>
+</body>
+
+</html>
