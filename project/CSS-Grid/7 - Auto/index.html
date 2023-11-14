@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" c="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" c="ie=edge" />
+    <title>CSS Grid - Auto</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Grid - Auto</title>
-</head>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      height: 100vh;
+      background: gray;
 
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  .main {
-    height: 100vh;
-    background: gray;
-  
-    /* Grid */
-    display: grid;
+      /* Grid */
+      display: grid;
 
-    /* AUTO COLUMNS */
-    /* grid-auto-flow: column;
+      /* AUTO COLUMNS */
+      /* grid-auto-flow: column;
     grid-auto-columns: 50px; */
 
-    /* AUTO ROWS */
-    /* grid-auto-rows: 50px; */
-  }
+      /* AUTO ROWS */
+      /* grid-auto-rows: 50px; */
+    }
 
-  .rod1 {
-    background: red;
-  }
-  .rod2 {
-    background: blue;
-  }
-  .rod3 {
-    background: yellow;
-  }
-  .rod4 {
-    background: green;
-  }
-</style>
+    .c1 {
+      background: red;
+    }
+    .c2 {
+      background: blue;
+    }
+    .c3 {
+      background: yellow;
+    }
+    .c4 {
+      background: green;
+    }
+  </style>
 
-<body>
-  <div class="main">
-    <div class="rod1">ROD 1</div>
-    <div class="rod2">ROD 2</div>
-    <div class="rod3">ROD 3</div>
-    <div class="rod4">ROD 4</div>
-  </div>
-</body>
-
+  <body>
+    <div class="main">
+      <div class="c1">c 1</div>
+      <div class="c2">c 2</div>
+      <div class="c3">c 3</div>
+      <div class="c4">c 4</div>
+    </div>
+  </body>
 </html>

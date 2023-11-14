@@ -1,0 +1,35 @@
+$black: #131313;
+$white: #ffff;
+$font-sizes: (
+"small": 1.3rem, 
+"normal": 2rem, 
+"large": 4rem);
+
+@mixin logo-color {
+    
+    background-color: #ff8177;
+    background: linear-gradient(to top, #fd1d1d 0%, #833ab4 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+@mixin button {
+    background-color: #ff2322;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background-color: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+@mixin main-button {
+    background-color: #ff2322;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background-color: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    padding: 20px 60px;
+
+}

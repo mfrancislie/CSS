@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<style>
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar{
+
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+    font-size: 1.2rem;
+  }
+
+  .navbar_container{
+
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+      height: 80px;
+      padding: 0 50px;
+      z-index: 1;
+  }
+
+  #navbar_logo{
+
+      text-decoration: none;
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+
+  }
+
+  .menu{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .menu li{
+
+      height: 80px;
+  }
+
+  .menu li a{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 125px;
+      text-decoration: none;
+      color: #ffff;
+      text-transform: capitalize;
+  }
+
+  .sub-menu-1{
+
+      visibility: hidden;
+      position: relative;
+      top: 5rem;
+      background: #131313;
+      min-height: 3rem;
+      min-width: 5rem;
+      border-radius: 2px;
+      transition: top 0.3s;
+
+  }
+
+  .hover-me:hover > .sub-menu-1{
+      visibility: visible;
+      top: 0;
+  }
+
+
+  .sub-menu-1::after{
+
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: red;
+  }
+
+  .sub-menu-1 ul{
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style: none;
+  }
+
+  .sub-menu-1 ul li {
+
+      text-align: center;
+      height: 60px;
+      width: 100%;
+  }
+
+  .hover-me1{
+
+      /*visibility: hidden;*/
+  }
+
+
+  .sub-menu-2{
+
+      visibility: hidden;
+      position: relative;
+      top: -3rem;
+      left: 10rem;
+      background: #131313;
+      min-height: 3rem;
+      min-width: 5rem;
+      border-radius: 2px;
+      transition: left 0.3s;
+
+  }
+
+  .hover-me1:hover > .sub-menu-2{
+      visibility: visible;
+      left: 7.5rem;
+  }
+
+  span{
+
+      position: absolute;
+      font-size: 1.5rem;
+      left: 6.5rem;
+  }
+
+</style>
+
+<nav class="navbar">
+  <div class="navbar_container">
+    <a href="#logo" class="" id="navbar_logo">MOMO</a>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li class="hover-me"><a href="#about">about</a>
+        <div class="sub-menu-1">
+          <ul>
+            <li><a href="">Mission</a></li>
+            <li class="hover-me1"><a href="">Vision <span>&rsaquo;</span></a>
+                 <div class="sub-menu-2">
+                    <ul>
+                      <li><a href="">Mission</a></li>
+                      <li><a href="">Vision</a></li>
+                      <li><a href="">Team</a></li>
+                    </ul>
+                  </div>
+            </li>
+            <li><a href="">Team</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#services">services</a></li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>

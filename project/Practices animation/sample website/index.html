@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+</head>
+<body>
+
+	
+
+<!-- navigation section -->
+
+<nav class="navbar">
+	<div class="container">
+		<a href="#logo" class="logo">CODSTY <span>LE</span></a>
+		<div class="toggle" id="mobile-menu">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<ul class="menu">
+			<li class="item">
+				<a href="#home" class="link" id="home-page">Home</a>
+			</li>
+			<li class="item">
+				<a href="#about" class="link" id="about-page">About</a>
+			</li>
+			<li class="item">
+				<a href="#services" class="link" id="services-page">Services</a>
+			</li>
+			<li class="item">
+				<a href="#contact" class="link" id="contact-page">Contact</a>
+			</li>
+			<li class="navbar_btn">
+				<a href="#home" class="btn">Sign Up</a>
+			</li>
+		</ul>
+
+	</div>
+</nav>
+
+
+<!-- modal -->
+<div class="modal" id="email-modal">
+  <div class="modal__content">
+    <span class="close-btn">&times;</span>
+    <div class="modal__content-left">
+      <img src="images/pic2.svg" alt="" id="modal-img">
+    </div>
+    <div class="modal__content-right">
+      <form action="" method="get" class="modal-form" id="form">
+        <h1>Get started with us today! Create your account by filling out the information below.</h1>
+        <div class="form-validation">
+          <input type="text" class="modal-input" placeholder="Enter your name" name="name" id="name">
+          <p>Error Message</p>
+        </div>
+        <div class="form-validation">
+          <input type="email" class="modal-input" placeholder="Enter your email" name="email" id="email">
+          <p>Error Message</p>
+        </div>
+        <div class="form-validation">
+          <input type="password" class="modal-input" placeholder="Enter your password" name="password" id="password">
+          <p>Error Message</p>
+        </div>
+        <div class="form-validation">
+          <input type="password" class="modal-input" placeholder="Confirm your password" name="password" id="password-confirm">
+          <p>Error Message</p>
+        </div>
+        <input type="submit" class="modal-input-btn" value="sign-up">
+        <span class="modal-input-login">Already have an account? Login <a href="#">Here</a></span>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- hero section -->
+
+<div class="hero" id="home">
+	<div class="hero_container">
+		<h1>Create Amazing Website Pure Html, Css & Java</h1>
+		<div class="hero_btn">
+			<button>Learning</button>
+			<button>Subscribe</button>
+		</div>
+	</div>	
+</div>
+
+<!-- about section -->
+
+<div class="main" id="about">
+	<div class="main_container">
+		<div class="main_img--container">
+			<div class="main_img--card">
+				<!-- <img class="picture" src="images/c1.jpg"> -->
+				
+			</div>
+		
+		</div>
+		<div class="main_content">
+			<h1>What do we do?</h1>
+			<h2>We help business scale</h2>
+			<p>Schedule a call about to learn our services</p>
+			<button class="main_btn"><a href="#schedule">Schedule Call</a></button>
+		</div>
+	</div>
+</div>
+
+
+<!-- services section -->
+
+<div class="services" id="services">
+	<h1>Our Services</h1>
+	<div class="services_wrapper">
+		<div class="services_card">
+			<h2>Custom Colorways</h2>
+          <p>AI Powered technology</p>
+          <div class="services__btn"><button>Get Started</button></div>
+		</div>
+		<div class="services_card">
+			<h2>Custom Colorways</h2>
+          <p>AI Powered technology</p>
+          <div class="services__btn"><button>Get Started</button></div>
+		</div>
+		<div class="services_card">
+			<h2>Custom Colorways</h2>
+          <p>AI Powered technology</p>
+          <div class="services__btn"><button>Get Started</button></div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- contact section -->
+
+<div class="contact" id="contact">
+	<div class="contact_container">
+		<h1>Get Access to Member Only Perks</h1>
+		<p>Sign up for our newsletter below to get Php100 of your first personal training session!</p>
+		<form action="" method="get">
+			<div class="contact_input-btn">
+				<input type="email" class="input-email" placeholder="Enter your email" name="email" id="email">
+				<button>Sign Up</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- footer section -->
+
+<div class="footer_container">
+	<div class="footer_links">
+		<div class="footer_link-wrapper">
+		    <div class="footer_link-items">
+	            <h2>About Us</h2>
+	            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+	            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+	        </div>
+	        <div class="footer_link-items">
+	            <h2>Contact Us</h2>
+	            <a href="/">Contact</a> <a href="/">Support</a>
+	            <a href="/">Destinations</a>
+	        </div>
+	     </div>
+	     <div class="footer_link-wrapper">
+	          <div class="footer_link-items">
+	            <h2>Videos</h2>
+	            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+	            <a href="/">Agency</a>
+	          </div>
+	          <div class="footer_link-items">
+	            <h2>Social Media</h2>
+	            <a href="/">Instagram</a> <a href="/">Facebook</a>
+	            <a href="/">Youtube</a> <a href="/">Twitter</a>
+	          </div>
+         </div>
+	 </div>
+	 <section class="social_media">
+	  <div class="social_media-wrap">
+	 	<div class="footer_logo">
+	 		<a href="#logo" class="logo">CODSTY <span>LE</span></a>
+	 	</div>
+	 	<p class="website_rights">© COLOR 2020. All rights reserved</p>
+	 	<div class="social_icons">
+	 		<a href="#" class="social_icon--link">
+	 			<i class="fas fab-facebook-icon">icon</i>
+	 		</a>
+	 		<a href="#" class="social_icon--link">
+	 			<i class="fas fab-facebook-icon">icon</i>
+	 		</a>
+	 		<a href="#" class="social_icon--link">
+	 			<i class="fas fab-facebook-icon">icon</i>
+	 		</a>
+	 		<a href="#" class="social_icon--link">
+	 			<i class="fas fab-facebook-icon">icon</i>
+	 		</a>
+	 		<a href="#" class="social_icon--link">
+	 			<i class="fas fab-facebook-icon">icon</i>
+	 		</a>
+	 	</div>
+	 </div>
+	 </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

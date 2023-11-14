@@ -1,0 +1,196 @@
+:root{
+
+	--red:#f9032f;
+	--black: #131313;
+	--white: #fff;
+	--blue: #3164D1;
+	--lightgray: #3F3D56 0%, #3F3D56 100%;
+	--green: #00C843;
+}
+
+
+.modal{
+
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	overflow: auto;
+	display: none;
+
+}
+
+.modal__content{
+
+	position: relative;
+	margin: 10% auto;
+	width: 60%;
+	border-radius: 4px;
+	min-height: 500px;
+	background: var(--white);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	transform: scale(1.2);
+	transition: all 0.5s ease;
+	
+}
+
+
+
+
+.close-btn{
+
+	position: absolute;
+	top: 2%;
+	right: 3%;
+	z-index: 1;
+}
+
+.close-btn:hover{
+
+	cursor: pointer;
+	color: var(--red);
+	transition: all 0.3s ease-out-in;
+}
+
+.modal__content-left{
+
+	background: linear-gradient(99deg, var(--lightgray));
+	border: 0 3px 0 3px;
+	position: relative;
+}
+
+#modal-img{
+
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+
+.modal__content-right{
+
+	border: 0 3px 0 3px 0;
+	position: relative;
+}
+
+.modal-form{
+
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-form h1{
+
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	width: 80%;
+	text-align: start;
+}
+
+.modal-input{
+
+	display: block;
+	padding-left: 0.5rem;
+	height: 2rem;
+	width: 100%;
+	border: none;
+	outline: none;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 2px;
+
+}
+.modal-input::placeholder{
+
+	color: #b1b1b1;
+}
+
+.form-validation{
+
+	margin-bottom: 0.5rem;
+	width: 80%;
+
+}
+
+
+.form-validation.error{
+
+	position: relative;
+	border: 1px solid var(--red);
+	margin-bottom: 1rem;
+}
+
+.form-validation.valid{
+
+	position: relative;
+	border: 1px solid var(--green);
+	margin-bottom: 1rem;
+	border-radius: 2px;
+}
+
+.form-validation p{
+
+	position: absolute;
+	top: 1.8rem;
+	font-size: 0.7rem;
+	margin-top: 0.3rem;
+	color: var(--red);
+	display: none;
+}
+
+.form-validation.error p{
+
+	display: block;
+}
+
+
+.modal-input-btn{
+
+	height: 2rem;
+	width: 80%;
+	margin-bottom: 1rem;
+	background: var(--red);
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	color: var(--white);
+	font-size: 1rem;
+}
+
+.modal-input-btn:hover{
+
+	background: var(--blue);
+	transition: all 0.5s ease;
+
+}
+
+
+@media screen and (max-width: 786px){
+
+	.modal__content-left{
+
+		display: none;
+	}
+
+	.modal__content{
+
+		grid-template-columns: auto;
+		margin: 16% auto;
+		width: 70%;
+		height: 75%;
+	}
+}

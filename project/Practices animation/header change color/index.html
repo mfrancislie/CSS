@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>header change color</title>
+</head>
+<style type="text/css">
+
+*{
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 10vh;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	transition: 200ms ease-in-out;
+}
+
+.link{
+
+	text-decoration: none;
+	color: #fff;
+	margin 0 20px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.link:hover{
+
+	color: red;	
+}
+
+	
+.button{
+
+	border: 1px solid #000;
+	padding: .4em 1em;
+	font-size: 1.1rem;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+}
+
+.button:hover{
+
+	background: rgba(255, 0, 0, .6);
+	color: #ffff;
+}
+header{
+
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	background: #131313;
+}
+	
+section{
+
+	min-height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}	
+
+.changeColor{
+
+	background-color: red;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.changeColor a {
+
+	color: #ffff;
+}
+
+</style>
+<body>
+	<nav>
+	 	<a href="#"><h2>Logo</h2></a>
+	 	<ul>
+	 		<a class="link" href="#">Home</a>
+	 		<a class="link" href="#">about</a>
+	 		<a class="link" href="#">Projects</a>
+	 		<a class="button" href="#">Contact</a>
+
+	 	</ul>
+	</nav>
+
+	<header>
+		<h1>Hello world</h1>
+		<p>loremadfasdfadgadfasdfasdfasdfasdf dadfsafsada</p>
+	</header>
+	<hr>
+	<section>
+		<h1>section 1</h1>
+	</section>
+	<hr>
+	<section>
+		<h1>section 2</h1>
+	</section>
+	<script src="app.js"></script>
+</body>
+</html>

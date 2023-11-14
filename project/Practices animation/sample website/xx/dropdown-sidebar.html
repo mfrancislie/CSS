@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tab</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<style type="text/css">
+ *{
+
+  margin: 0; 
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.tab {
+
+    background: #f1f1f1;
+    width: 50%;
+    overflow: hidden;
+}
+
+.tab button {
+
+    padding: 14px 26px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    float: left;
+}
+
+.tab button:hover{
+
+    background: #ccc;
+
+}
+
+.tab button.active{
+
+      background: #fff;
+      border: 2px solid #b4b4b4;
+      border-bottom: #fff;
+      border-radius: 4px 4px 0 0;    
+
+}
+
+
+.tabcontent {
+
+    width: 50%;
+    background: #fff;
+    border: none;
+    border-top: 2px solid grey;
+    margin-top: -.1rem;
+    display: none;
+}
+
+.text { 
+
+  animation: fade 1s ease-in-out;
+  margin: 10px;
+}
+
+
+@keyframes fade {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+
+      opacity: 1;
+    }
+}
+</style>
+
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'china')">China</button>
+  <button class="tablinks" onclick="openCity(event, 'london')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'tokyo')">Tokyo</button>
+</div>
+
+<div class="tabcontent" id="china">
+  <div class="text">
+    <h2>China</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+  </div>
+</div>
+
+<div class="tabcontent" id="london">
+  <div class="text">
+    <h2>Londo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+  </div>
+</div>
+
+<div class="tabcontent" id="tokyo">
+  <div class="text">
+    <h2>Tokyo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+  </div>
+</div>
+
+<script>
+
+  function openCity(evt, city){
+
+    /*Get all variables*/
+
+    var i, tabcontent, tablinks;
+
+    /**/
+    var tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+
+
+    var tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace('active', '');
+    }
+
+    document.getElementById(city).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  }
+
+
+</script>
+</body>
+</html>
+
